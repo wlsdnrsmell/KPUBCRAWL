@@ -1,24 +1,31 @@
-<h>첫걸음</h>
-<h>가상 환경만들기</h>
+#첫걸음
 
-mkdir KPUBCRAWING
+##가상 환경만들기
 
-python -m venv myvenv
-myvenv\Scripts\activate
+    mkdir KPUBCRAWING
 
-<h>장고설치</h>
-pip install django == 1.8
+    python -m venv myvenv
+    myvenv\Scripts\activate
 
-django-admin startproject kpubcrawl .
+##장고설치
+    pip install django == 1.8
 
-python manage.py migrate
+    django-admin startproject kpubcrawl .
 
-<h>어플리케이션 제작</h>
-python manage.py startapp seoulcrawl
+    python manage.py migrate
 
-<h>models</h>
-class info_client:
-    firstname
+##어플리케이션 제작
+    python manage.py startapp seoulcrawl
 
-python manage.py makemigrations seoulcrawl
-python manage.py migrate seoulcrawl
+##models
+    class info_client:
+        firstname
+
+    python manage.py makemigrations seoulcrawl
+    python manage.py migrate seoulcrawl
+##urls정규표현식
+    ^ 문자열이 시작할 떄
+    $ 문자열이 끝날 때
+    \d 숫자
+    + 바로 앞에 나오는 항목이 계속 나올 때
+    () 패턴의 부분을 저장할 때
