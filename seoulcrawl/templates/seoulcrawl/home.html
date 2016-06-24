@@ -37,6 +37,10 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }
+img {
+	margin : auto;
+	display: block;
+}
 </style>
 <style>
 .center {
@@ -201,7 +205,7 @@ img {
 
 	<div class="kleo_text_column wpb_content_element  animated animate-when-almost-visible top-to-bottom">
 		<div class="wpb_wrapper">
-			<h2 style="text-align: center;">JOIN THE PUB CRAWL Seoul FROM \10,000</h2>
+			<h2 style="text-align: center;">JOIN THE PUB CRAWL Seoul FROM &#x20a9;10,000</h2>
 
 		</div> 
 	</div> <div  class="kleo-gap" style="height:20px;line-height:20px;"></div>
@@ -210,24 +214,18 @@ img {
 			<p style="text-align: justify;">We meet every night at 8pm by the<strong> Noksapyeong station</strong> (metro lines 6) Look for the original Seoul guides wearing the red t-shirt and holding the big yellow sign <em>(check the map below)</em></p>
 
 		</div> 
-	</div> <div  class="kleo-gap" style="height:20px;line-height:20px;"></div><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="row multi-columns-row"><div class="one-by-one-animated animate-when-almost-visible"><div class="col-xs-12  col-md-12"><div class="kleo-block feature-item list-el-animated default-icons-size center-icons"><span class="feature-icon el-appear icon-calendar"></span><h3 class="feature-title"></h3><div class="feature-text"></p>
+	</div> <div  class="kleo-gap" style="height:20px;line-height:20px;"></div><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="row multi-columns-row"><div class="one-by-one-animated animate-when-almost-visible"><div class="col-xs-12  col-md-12"><div class="center">{% load staticfiles %}<img src="{% static 'img/calendar.PNG'%}" title = "calendar party"/><h3 class="feature-title"></h3><div class="feature-text" style ="text-align:center;">
 <p>Pub crawl Seoul For solo travelers or small groups (<em>less than 10 people)</em></p>
-<p></div></div></div></div></div><div class="vc_button-2-wrapper vc_button-2-align-center"><a class="vc_btn vc_btn_juicy_pink vc_btn-juicy_pink vc_btn_md vc_btn-md vc_btn_rounded" href="https://docs.google.com/forms/d/1z_IMuMB2o2F-KkOCgLV7yy8cDjaR66d9h7uIDk674Uc/viewform" title="Clic here to book for solo travelers or small groups" target="">BOOK HERE YOUR CRAWL</a>
+<p></div></div><div class="vc_button-2-wrapper vc_button-2-align-center"><a class="vc_btn vc_btn_juicy_pink vc_btn-juicy_pink vc_btn_md vc_btn-md vc_btn_rounded" href="{% url 'join' %}" title="Clic here to book for solo travelers or small groups" target="">BOOK HERE YOUR CRAWL</a>
 </div>
-</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="row multi-columns-row"><div class="one-by-one-animated animate-when-almost-visible"><div class="col-xs-12  col-md-12"><div class="kleo-block feature-item list-el-animated default-icons-size center-icons"><span class="feature-icon el-appear icon-calendar"></span><h3 class="feature-title"></h3><div class="feature-text"></p>
-<p>Pub crawl Seoul for groups (<em>more than 10 pax</em>) and private tours</p>
-<p></div></div></div></div></div><div class="vc_button-2-wrapper vc_button-2-align-center"><a class="vc_btn vc_btn_juicy_pink vc_btn-juicy_pink vc_btn_md vc_btn-md vc_btn_rounded" href="https://docs.google.com/forms/d/1z_IMuMB2o2F-KkOCgLV7yy8cDjaR66d9h7uIDk674Uc/viewform" title="Clic here to make resevartions for groups" target="">BOOK YOUR GROUP CRAWL</a>
-</div>
-</div></div></div></div><div  class="kleo-gap" style="height:20px;line-height:20px;"></div>
+</div></div></div><div  class="kleo-gap" style="height:20px;line-height:20px;"></div>
 	<div  class="hr-title hr-full hr-center" style=""><abbr><i class=""></i> DON'T WALK...... CRAWL!</abbr></div><div  class="kleo-gap" style="height:20px;line-height:20px;"></div><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper"><div  class="kleo-gap" style="height:20px;line-height:20px;"></div>
 <div class="kleo-gallery kleo-carousel-container dot-carousel animate-when-almost-visible kleo-single-image">
 	<!--<div class="kleo-carousel-items kleo-thumbs-animated th-fade" data-pager=".kleo-carousel-features-pager" data-min-items="1" data-max-items="1" data-autoplay="yes" data-speed="5000" data-scroll-fx="scroll" data-items-height="variable">-->
 		<div class="kleo-carousel">
-				
-														<a href="img\k-pubcrawl.jpg"  rel="modalPhoto[rel-1285061679]">
-										<img class="" src="img\k-pubcrawl.jpg" width="400" height="400" alt="Pub crawl Seoul - Party" title="Pub crawl Seoul - Party" />
-						
-							</div>
+			{% load staticfiles %}
+			<img class="" src="{% static 'img/k-pubcrawl.jpg' %}" width="400" height="400" alt="Pub crawl Seoul - Party" title="Pub crawl Seoul - Party" />
+		</div>
 	<!--</div>-->
 		
 		<div class="kleo-carousel-features-pager carousel-pager"></div>
@@ -265,7 +263,7 @@ img {
 	<div class="kleo_text_column wpb_content_element  animated animate-when-almost-visible top-to-bottom">
 		<div class="wpb_wrapper">
 			<h4>PUB CRAWL SEOUL PACK #1</h4>
-<p>For only 10,000won you&#8217;ll get:</p>
+<p>For only &#8361 10,000 you&#8217;ll get:</p>
 <ul>
 <li>3-4 Different bars (in all of them music will play music for dancing)</li>
 <li>1 Welcome shot in every bar</li>
@@ -288,7 +286,7 @@ img {
 	<div class="kleo_text_column wpb_content_element ">
 		<div class="wpb_wrapper">
 			<h4>PUB CRAWL SEOUL PACK #2</h4>
-<p>But if you want more for 16,000won you&#8217;ll get:</p>
+<p>But if you want more for &#8361 16,000 you&#8217;ll get:</p>
 <ul>
 <li>Pack #1</li>
 <li>+ 1 hour of open bar of beer and sangria at the first bar.</li>
@@ -305,8 +303,8 @@ img {
 
 	<div class="kleo_text_column wpb_content_element ">
 		<div class="wpb_wrapper">
-			<h4>PUB CRAWL MADRID PACK #3</h4>
-<p>For 23€ you&#8217;ll get:</p>
+			<h4>PUB CRAWL SEOUL PACK #3</h4>
+<p>For &#8361 20,000 you&#8217;ll get:</p>
 <ul>
 <li>Pack #1.</li>
 <li>+ 1 hour of open bar of beer and sangria at the first bar.</li>
@@ -316,13 +314,6 @@ img {
 		</div> 
 	</div>
 		</div></div></div></div><div  class="kleo-gap" style="height:20px;line-height:20px;"></div>
-	<div  class="hr-title hr-full hr-center hr-double" style=""><abbr><i class=""></i> HOW TO JOIN</abbr></div><div  class="kleo-gap" style="height:20px;line-height:20px;"></div><div class="row multi-columns-row bordered-icons box-style"><div class="col-xs-12 col-sm-6 col-md-4"><div class="kleo-block feature-item list-el-animated default-icons-size center-icons"><span class="feature-icon el-appear icon-umbrella"></span><h3 class="feature-title">Tours run all year</h3><div class="feature-text"></p>
-<p><span style="text-decoration: underline;">No matter the weather conditions</span>, MADRIDE Pub Crawl Madrid tours run all year long, well, except the  24th, 25th, 31st of december and 1st of january, we also need a break <img src="http://madride.net/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
-<p></div></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div class="kleo-block feature-item list-el-animated default-icons-size center-icons"><span class="feature-icon el-appear icon-attention"></span><h3 class="feature-title">BE CAREFULL!</h3><div class="feature-text"></p>
-<p><strong>Many people near Puerta del Sol will try to convince you</strong> they are from MADride Pub crawl Madrid team or they have better offers for you, but after you pay them, you won&#8217;t see them again. Look for our original guides wearing holding the big yellow sign with our logo.</p>
-<p></div></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div class="kleo-block feature-item list-el-animated default-icons-size center-icons"><span class="feature-icon el-appear icon-users"></span><h3 class="feature-title">MEETING POINT</h3><div class="feature-text"></p>
-<p style="text-align: justify;">We’ll be waiting for you and the rest of the folks want to join the Pub crawl Madrid every night by the <strong>BEAR STATUE in PUERTA DEL SOL</strong> metro line 1, 2, &amp; 3  at 10:30 PM look for our guides wearing the red t-shirt and <span style="text-decoration: underline;">holding the big yellow sign with the BEAR logo</span></p>
-<p></div></div></div></div><div  class="kleo-gap" style="height:20px;line-height:20px;"></div>
 	<div class="kleo_text_column wpb_content_element  animated animate-when-almost-visible bottom-to-top">
 		<div class="wpb_wrapper">
 			<h2 style="text-align: center;">DON&#8217;T ACCEPT IMITATIONS!</h2>
@@ -339,18 +330,18 @@ img {
 <div id="lmm_map_c219000c" class="lmm-map" style="background:#f6f6f6;border:1px solid #ccc;height:300px; overflow:hidden;padding:0;"><p style="font-size:80%;color:#9f9e9e;margin-left:5px;">loading map - please wait...<noscript><br/><strong>Map could not be loaded - please enable Javascript!</strong><br/><a style="text-decoration:none;" href="https://www.mapsmarker.com/js-disabled" target="_blank">&rarr; more information</a></noscript></p></div>
 <div id="lmm_geo_tags_c219000c" class="lmm-geo-tags geo">
 <span class="paneltext">SOUEL TRAVEL MEETING POINT</span>
-<span class="latitude">37.4978649</span>, <span class="longitude">127.0517627</span>
-<span class="popuptext">Look for this Horseriding statue in Coex
+<span class="latitude">37.534533</span>, <span class="longitude">126.9923903</span>
+<span class="popuptext">Look for this Noksapeong station
 &nbsp;</span>
 </div>
 </div>
 
 		</div> 
-	</div> </div></div></div></div><div  class="kleo-gap" style="height:20px;line-height:20px;"></div><div class="row multi-columns-row colored-icons"><div class="one-by-one-animated animate-when-almost-visible"><div class="col-xs-12  col-md-12"><div class="kleo-block feature-item list-el-animated big-icons-size"><span class="feature-icon el-appear icon-eye"></span><h3 class="feature-title">REMEMBER</h3><div class="feature-text"></p>
-<p style="text-align: justify;">The Pub Crawl Madrid is subject to cancellation in case the tour does not have a minimun of 3 participants either, way our guides will do their best to help you to enjoy Madrid. THANKS FOR YOUR UNDERSTANDING</p>
-<p style="text-align: justify;">For those who decide to join the MADRIDE PUB CRAWL MADRID a valid ID can be requested at the night clubs.</p>
-<p style="text-align: justify;">Dress to impress! On MADRIDE PUB CRAWL MADRID we have no dress code but some of the night clubs do. So in case you may want to last until the last club (night club) is important you know, any sport or beach clothes are NO admited in some of those places.</p>
-<p></div></div></div></div></div></div></div></div></div></div></section><!-- end section -->
+	</div> </div></div></div></div><div  class="kleo-gap" style="height:20px;line-height:20px;"></div><div class="row multi-columns-row colored-icons"><div class="one-by-one-animated animate-when-almost-visible"><div class="col-xs-12  col-md-12"><h3 class="feature-title">REMEMBER</h3><div class="feature-text"></p>
+<p style="text-align: justify;">The Pub Crawl Seoul is subject to cancellation in case the tour does not have a minimun of 3 participants either, way our guides will do their best to help you to enjoy Seoul city. THANKS FOR YOUR UNDERSTANDING</p>
+<p style="text-align: justify;">For those who decide to join the K-PUB CRAWL Seoul a valid ID can be requested at the night clubs.</p>
+<p style="text-align: justify;">Dress to impress! On K-PUB CRAWL SEOUL we have no dress code but some of the night clubs do. So in case you may want to last until the last club (night club) is important you know, any sport or beach clothes are NO admited in some of those places.</p>
+<p></div></div></div></div></div></div></div></div></div></section><!-- end section -->
             </div><!--end article-content-->
 
     </article>
@@ -544,7 +535,7 @@ scale_markermap_1.addTo(markermap_1);
 var marker_markermap_1 = new L.Marker(new L.LatLng(37.5048775,127.0395916),{ title: 'Seoul TRAVEL MEETING POINT',  opacity: 1});
 marker_markermap_1.options.icon = new L.Icon({iconUrl: 'http://madride.net/wp-content/plugins/leaflet-maps-marker/leaflet-dist/images/marker.png',iconSize: [32, 37],iconAnchor: [17, 36],popupAnchor: [-1, -32],shadowUrl: 'http://madride.net/wp-content/plugins/leaflet-maps-marker/leaflet-dist/images/marker-shadow.png',shadowSize: [41, 41],shadowAnchor: [16, 43],className: 'lmm_marker_icon_default'});
 markermap_1.addLayer(marker_markermap_1);
-marker_markermap_1.bindPopup("<p style=\"text-align: left;\"><a href=\"http://madride.net/wp-content/uploads/2015/06/Bear-statue.png\"><img class=\" size-rt_media_featured_image wp-image-4966 alignleft\" src=\"http://imgnews.naver.net/image/003/2015/11/06/NISI20151106_0006099810_web_99_20151106070304.jpg\" alt=\"Bear statue\" width=\"10\" height=\"10\" /></a>Look for this Horseriding statue in Coex</p><br />&nbsp;<div class='popup-directions' style='border-top:1px solid #f0f0e7;padding-top:5px;margin-top:5px;clear:both;'>Coex, Soeul, Korea (<a href=http://maps.google.com/maps?daddr=Puerta+del+Sol%2C+Madrid%2C+Espa%C3%B1a&t=m&layer=1&doflg=ptk&om=0 target='_blank' title='Get directions'>Directions</a>)</div>", {maxWidth: 250, minWidth: 200, maxHeight: 160, autoPan: true, closeButton: true, autoPanPadding: new L.Point(5, 5)}).openPopup();
+marker_markermap_1.bindPopup("<p style=\"text-align: left;\"><a href=\"http://madride.net/wp-content/uploads/2015/06/Bear-statue.png\"><img class=\" size-rt_media_featured_image wp-image-4966 alignleft\" src=\"http://postfiles7.naver.net/20150807_198/wdentilsan1_1438915785882mUHTq_JPEG/%B3%EC%BB%E7%C6%F2%BF%AA%BF%A1%BC%AD_%B0%E6%B8%AE%B4%DC%B1%E6_%282%29.JPG?type=w2\" alt=\"Bear statue\" width=\"10\" height=\"10\" /></a>Look for Noksapeong station exit No.2 </p><br />&nbsp;<div class='popup-directions' style='border-top:1px solid #f0f0e7;padding-top:5px;margin-top:5px;clear:both;'>Noksapeong, Soeul, Korea (<a href=http://maps.google.com/maps?daddr=Puerta+del+Sol%2C+Madrid%2C+Espa%C3%B1a&t=m&layer=1&doflg=ptk&om=0 target='_blank' title='Get directions'>Directions</a>)</div>", {maxWidth: 250, minWidth: 200, maxHeight: 160, autoPan: true, closeButton: true, autoPanPadding: new L.Point(5, 5)}).openPopup();
 })(jQuery);
 jQuery(document).ready( function($) {
 function resizeMap() {

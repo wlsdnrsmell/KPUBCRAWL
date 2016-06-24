@@ -8,4 +8,6 @@ urlpatterns = [
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'',include('seoulcrawl.urls')),
+     #social url
+    url(r'', include('social.apps.django_app.urls',namespace ='social')),
 ]

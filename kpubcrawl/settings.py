@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'seoulcrawl',
+    'social.apps.django_app.default',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -102,3 +103,50 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+TEMPLATES_CONTENT_PROCESSORS = (
+    "django.contrib.auth.context_processors.auth",
+    "django.core.context_processors.debug",
+    "django.core.context_processors.i18n",
+    "django.core.context_processors.media",
+    "django.core.context_processors.static",
+    "django.core.context_processors.tz",
+    "django.contrib.messages.context_processors.messages",
+    'django.core.context_processors.request',
+    'social.apps.django_app.context_processors.backedns',
+    'social.apps.django_app.context_processors.login_redirect',
+)
+AUTHENTICATION_BACKENDS = (
+    "social.backends.facebook.FacebookOAuth2",
+    "social.backends.google.GoogleOAuth2",
+    "social.backends.twitter.TwitterOAuth",
+    "django.contrib.auth.backends.ModelBackend",        
+)
+
+#로그인 후 되돌아올 URL
+SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/'
+
+#인증 URL의 NAMESPACE
+SOCIAL_AUTH_LOGIN_NAMESPACE = 'social'
+
+#Facebook
+SOCIAL_AUTH_FACEBOOK_KEY = "278725945810246"
+SOCIAL_AUTH_FACEBOOK_SECRET = '32ebc4c72ed5141fd29ef1e0e71a3a4f'
+
+#Google
+#Social_AUTH_GOOGLE_OAUTH2_KEY = ''
+#Social_AUTH_GOOGLE_OAUTH2_SECRET = ''
+
+#Twitter
+#SOCIAL_AUTH_TWITTER_KEY = ''
+#SOCIAL_AUTH_TWITTER_SECRET = ''
+
+#세션 객체를 직렬화 하는 처리기
+SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
+
+#미디어 처리
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (("img","C:/Users/jinwook/kpubcrawling/seoulcrawl/static_files/img/"),)
+STSTIC_ROOT = os.path.join(BASE_DIR,'collected_statics')
+MEDIA_URL = '/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'static_files')
